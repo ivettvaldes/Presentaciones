@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  background-image:
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%231a1a1a" width="100" height="100"/><circle cx="20" cy="20" r="1" fill="%23333"/><circle cx="80" cy="60" r="1.5" fill="%23333"/><circle cx="50" cy="80" r="1" fill="%23333"/></svg>');
+  color: #c0c0c0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 3rem 2rem 1rem 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+               -1px -1px 0px rgba(255, 255, 255, 0.1);
+  border-bottom: 3px solid #666;
+  padding-bottom: 1rem;
+  position: relative;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: scaleX(1.02);
+}
+
+h1::before {
+  content: '━━━';
+  display: block;
+  color: #555;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 2rem;
+  color: #a8a8a8;
+  line-height: 1.8;
+  max-width: 600px;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 4px solid #555;
+}
+
+p::before {
+  content: '»';
+  position: absolute;
+  left: -1.5rem;
+  color: #666;
+  font-size: 1.5rem;
+}
+
+/* Efectos grunge */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(100, 50, 50, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(50, 50, 100, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Líneas decorativas grunge */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Efecto de papel rasgado */
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    #555 10%,
+    #555 20%,
+    transparent 30%,
+    transparent 40%,
+    #555 50%,
+    #555 60%,
+    transparent 70%,
+    transparent 80%,
+    #555 90%,
+    transparent 100%);
+  margin-top: 1rem;
+}
+
+/* Animación sutil */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.95; }
+}
+
+h1 {
+  animation: flicker 4s infinite;
+}
