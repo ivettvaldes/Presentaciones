@@ -1,79 +1,115 @@
-
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Carta de presentación de Joseph Asiel García Guerrero, estudiante de programación."
-    />
-    <title>Joseph Asiel García Guerrero | Programación</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <article aria-labelledby="nombre">
-        <header>
-          <p>Carta de presentación</p>
-        </header>
-
-        <section aria-labelledby="nombre">
-          <h1 id="nombre">Joseph Asiel García Guerrero</h1>
-          <p>Vocación: Programación</p>
-        </section>
-      </article>
-    </main>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Alexis López, "El mai"</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link href ="miproyectito.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carrusel de tarjetas de presentación.">
+  <title>Presentaciones</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-  <header class="hero">
-    <div>
-      <h1>Hola, soy Alexis López</h1>
-      <span class="apodo">"El mai", o como me guste nombrarme</span>
-      <p>Tengo muchos pasatiempos y cada día aprendo un poquito más del mundo. Eso me ha ayudado a madurar.</p>
-    </div>
-    <div class="disco" role="img" aria-label="Disco de vinil girando con la etiqueta El mai">
-      <div class="etiqueta">EL<br>MAI</div>
-    </div>
-  </header>
+  <main class="gallery">
+    <header class="gallery__heading">
+      <p class="eyebrow">Conócenos</p>
+      <h1>Tarjetas de presentación</h1>
+      <p>Explora las tarjetas y conoce a todas las personas del equipo.</p>
+    </header>
 
-  <section>
-    <h2>Lo que me hace feliz</h2>
-    <ul class="gustos">
-      <li>Cocinar <span>y probar todo lo que sale</span></li>
-      <li>Comer <span>sin culpa</span></li>
-      <li>Escuchar música <span>a todo volumen</span></li>
-      <li>Dormir <span>un deporte de alto rendimiento</span></li>
-    </ul>
-  </section>
+    <div class="carousel-stage">
+      <button class="carousel-button carousel-button--side carousel-button--previous" type="button" data-direction="previous" aria-label="Tarjeta anterior">←</button>
+      <section class="carousel" aria-label="Carrusel de tarjetas de presentación">
+      <article class="person-card person-card--berakhah" aria-labelledby="berakhah-name">
+        <div class="card-art card-art--pastel"><span class="avatar">BL</span><span class="card-tag">Creatividad digital</span></div>
+        <div class="card-content">
+          <p class="eyebrow">Diseño · Experiencias digitales</p>
+          <h2 id="berakhah-name">Berakhah Efratah Lara Perez</h2>
+          <p>Creo experiencias digitales bonitas, claras y fáciles de usar, con una vibra tierna de caricatura clásica.</p>
+          <div class="stats" aria-label="Habilidades"><span><b>98</b> Creatividad</span><span><b>91</b> Estilo</span><span><b>87</b> UX</span></div>
+          <p class="contact">Ramos Arizpe, Coahuila, México<br><a href="mailto:laraberakhah@gmail.com">laraberakhah@gmail.com</a></p>
+          <a class="card-link" href="mailto:laraberakhah@gmail.com">Contactar</a>
+        </div>
+      </article>
 
-  <section>
-    <h2>Las rolas que no fallan</h2>
-    <div class="videos">
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/tZ0imk1r4V4" title="La Despedida" loading="lazy" allowfullscreen></iframe></div><h3>La Despedida</h3><p>Grupo Pegasso · <a href="https://www.youtube.com/watch?v=tZ0imk1r4V4" target="_blank" rel="noopener">ver en YouTube</a></p></article>
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/VJ8-DhBGFqM" title="Besitos de ti" loading="lazy" allowfullscreen></iframe></div><h3>Besitos de ti</h3><p>Grupo Toppaz · <a href="https://www.youtube.com/watch?v=VJ8-DhBGFqM" target="_blank" rel="noopener">ver en YouTube</a></p></article>
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/o62xvSMH7fU" title="Mi Pequeño Amor" loading="lazy" allowfullscreen></iframe></div><h3>Mi Pequeño Amor</h3><p>Liberación · <a href="https://www.youtube.com/watch?v=o62xvSMH7fU" target="_blank" rel="noopener">ver en YouTube</a></p></article>
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/Jp7-kctJyow" title="Enamorado de Ti" loading="lazy" allowfullscreen></iframe></div><h3>Enamorado de Ti</h3><p>Los Temerarios · <a href="https://www.youtube.com/watch?v=Jp7-kctJyow" target="_blank" rel="noopener">ver en YouTube</a></p></article>
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/o5VJBLIb2MU" title="El Último Beso" loading="lazy" allowfullscreen></iframe></div><h3>El Último Beso</h3><p>Sonido Mazter · <a href="https://www.youtube.com/watch?v=o5VJBLIb2MU" target="_blank" rel="noopener">ver en YouTube</a></p></article>
-      <article class="video"><div class="marco"><iframe referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" src="https://www.youtube-nocookie.com/embed/CPP5dmwoTu4" title="Piensa En Mí" loading="lazy" allowfullscreen></iframe></div><h3>Piensa En Mí</h3><p>Grupo Mojado · <a href="https://www.youtube.com/watch?v=CPP5dmwoTu4" target="_blank" rel="noopener">ver en YouTube</a></p></article>
+      <article class="person-card person-card--dante" aria-labelledby="dante-name">
+        <div class="card-art card-art--blue"><span class="initials">DR</span><span class="card-tag">Presentación</span></div>
+        <div class="card-content">
+          <p class="eyebrow">Hola, soy</p>
+          <h2 id="dante-name">Dante Kaleb Rodriguez Flores</h2>
+          <p>Bienvenido a esta página de presentación.</p>
+        </div>
+      </article>
+
+      <article class="person-card person-card--asiel" aria-labelledby="asiel-name">
+        <div class="card-art card-art--lavender"><span class="initials">JG</span><span class="card-tag">Vocación</span></div>
+        <div class="card-content">
+          <p class="eyebrow">Carta de presentación</p>
+          <h2 id="asiel-name">Joseph Asiel García Guerrero</h2>
+          <p>Vocación: <strong>Programación</strong></p>
+        </div>
+      </article>
+
+      <article class="person-card person-card--alexis" aria-labelledby="alexis-name">
+        <div class="card-art card-art--music"><span class="record" aria-hidden="true">EL<br>MAI</span><span class="card-tag">Música y buenos momentos</span></div>
+        <div class="card-content">
+          <p class="eyebrow">Conoce a</p>
+          <h2 id="alexis-name">Alexis López</h2>
+          <p class="nickname">“El mai”, o como me guste nombrarme.</p>
+          <p>Tengo muchos pasatiempos y cada día aprendo un poquito más del mundo. Eso me ha ayudado a madurar.</p>
+          <h3>Lo que me hace feliz</h3>
+          <ul class="likes"><li>Cocinar y probar todo lo que sale</li><li>Comer sin culpa</li><li>Escuchar música a todo volumen</li><li>Dormir, un deporte de alto rendimiento</li></ul>
+          <p class="contact">Estas son algunas de mis rolas favoritas:</p>
+          <ul class="songs"><li><a href="https://www.youtube.com/watch?v=tZ0imk1r4V4" target="_blank" rel="noopener noreferrer">La Despedida — Grupo Pegasso</a></li><li><a href="https://www.youtube.com/watch?v=VJ8-DhBGFqM" target="_blank" rel="noopener noreferrer">Besitos de ti — Grupo Toppaz</a></li><li><a href="https://www.youtube.com/watch?v=o62xvSMH7fU" target="_blank" rel="noopener noreferrer">Mi Pequeño Amor — Liberación</a></li><li><a href="https://www.youtube.com/watch?v=Jp7-kctJyow" target="_blank" rel="noopener noreferrer">Enamorado de Ti — Los Temerarios</a></li><li><a href="https://www.youtube.com/watch?v=o5VJBLIb2MU" target="_blank" rel="noopener noreferrer">El Último Beso — Sonido Mazter</a></li><li><a href="https://www.youtube.com/watch?v=CPP5dmwoTu4" target="_blank" rel="noopener noreferrer">Piensa En Mí — Grupo Mojado</a></li></ul>
+          <p class="signature">Hecho por Alexis López</p>
+        </div>
+      </article>
+
+      <article class="person-card person-card--ivett" aria-labelledby="ivett-name">
+        <div class="card-art card-art--night"><span class="initials">IV</span><span class="card-tag">En construcción</span></div>
+        <div class="card-content">
+          <p class="eyebrow">Presentación</p>
+          <h2 id="ivett-name">Ivett</h2>
+          <p>Esta tarjeta está lista para agregar la información de su presentación.</p>
+        </div>
+      </article>
+      </section>
+      <button class="carousel-button carousel-button--side carousel-button--next" type="button" data-direction="next" aria-label="Tarjeta siguiente">→</button>
     </div>
-  </section>
+    <nav class="carousel-controls" aria-label="Controles del carrusel">
+      <span class="carousel-status" aria-live="polite">1 / 5</span>
+    </nav>
+    <p class="hint">Usa las flechas, las teclas ← → o desliza para recorrer las tarjetas.</p>
+  </main>
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const cards = [...document.querySelectorAll('.person-card')];
+    const status = document.querySelector('.carousel-status');
+    let activeIndex = 0;
 
-  <footer>Hecho por Alexis López</footer>
-</main>
+    function showCard(index) {
+      activeIndex = (index + cards.length) % cards.length;
+      status.textContent = `${activeIndex + 1} / ${cards.length}`;
+      updateCardStyles();
+    }
+
+    function updateCardStyles() {
+      cards.forEach((card, index) => {
+        card.classList.toggle('is-active', index === activeIndex);
+        card.classList.toggle('is-next', index === (activeIndex + 1) % cards.length);
+        card.classList.toggle('is-previous', index === (activeIndex - 1 + cards.length) % cards.length);
+      });
+    }
+
+    document.querySelectorAll('.carousel-button').forEach((button) => {
+      button.addEventListener('click', () => showCard(activeIndex + (button.dataset.direction === 'next' ? 1 : -1)));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.target instanceof HTMLElement && /^(INPUT|TEXTAREA|SELECT|BUTTON)$/.test(event.target.tagName)) return;
+      if (event.key === 'ArrowRight') showCard(activeIndex + 1);
+      if (event.key === 'ArrowLeft') showCard(activeIndex - 1);
+    });
+
+    updateCardStyles();
+  </script>
 </body>
 </html>
-
-
